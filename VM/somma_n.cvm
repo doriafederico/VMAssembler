@@ -1,0 +1,35 @@
+; Francesco Forcellato.
+; somma primi n numeri interi
+29 ; numero righe
+12 ;[0] MOV R0 n
+0 ; [1]
+100 ; [2]
+20 ;[3] CALL di somma_n()
+8 ;[4] riga a cui deve andare
+1 ;[5] DISPLAY R30
+30 ;[6]
+0 ;[7] HALT
+; somma_n()
+12 ;[8] MOV R25 1
+25 ;[9]
+1 ;[10]
+12 ;[11] MOV R30 0
+30 ;[12]
+0 ;[13]
+;
+30 ;[14] ADD R0 R30
+0 ;[15]
+30 ;[16]
+11 ;[17] POP R30
+30 ;[18]
+31 ;[19] SUB R0 - 1
+0;[20]
+25;[21]
+11;[22] POP R0
+0;[23]
+10 ;[24] PUSH R0
+0 ;[25]
+24 ;[26] JPOS 14
+14 ;[27]
+21 ;[28] RET
+;funzione finita

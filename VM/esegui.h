@@ -1,0 +1,1 @@
+int esegui(char *str);
